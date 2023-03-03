@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PFarmer</title>
+    <style>
+        body{
+            background-color:white;
+            text-align: center;
+        }
+        form{
+         position: absolute;
+         top:100px;
+         left:500px;
+         width: 400px; 
+         border-radius: 10px;
+         padding-top: 10px;
+         padding-bottom: 20px;
+         
+        }
+        .form6 {
+            position: fixed;
+            background-color: rgba(12,33,100,0.7);
+        }
+        input{
+            background-color:white;
+            padding: 4px;
+            border-radius: 7px;
+            outline: none;
+        }
+      a{
+        text-decoration: none;
+        font-size: larger;
+      }
+      .header{
+        color:blue;
+        margin-left: 100px;
+      }
+.submit{
+color:blueviolet;
+background-color: blue;
+padding: 7px;
+border-radius: 4px;
+}
+.submit:hover{
+    background-color: aqua;
+    color: cornflowerblue;
+}
+    </style>
+</head>
+<body>
+    <div class="body1">
+    <div><h1 class="header">Agriculture Dev</h1> </div>
+ <form action="/create" class="form6" METHOD="POST">
+    <label for="firstname">FirstName</label><br>
+    <input type="text" name="firstname" id="firstname" placeholder=" " required><br>
+    <label for="lastname">Last Name</label><br>
+    <input type="text" name="lastname" id="lastname" required><br>
+    <label for="phone">Phone</label><br>
+    <input type="text" name="phone" id="phone" required><br>
+    <label for="email">Email</label><br>
+    <input type="email" name="email" id="email" required><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password" required><br>
+<br>
+<button type="submit" class="submit">SIGN</button>
+<br><br>
+already have account?
+
+<br><br>
+    <a href="/log" class="log">login</a>
+   
+ </form>
+ </div>
+</body>
+</html>

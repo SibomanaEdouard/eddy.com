@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELETE YOUR DETAILS</title>
+    <style>
+    body{
+        background-color:white;
+        text-align: center;
+    }
+    form{
+        text-align: center;
+        width:300px;
+        border-radius: 7px;
+        
+    }
+    label{
+        color: blue;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    input{
+        background-color: white;
+        padding: 4px;
+        border-radius: 6px;
+        outline: none;
+    }
+    
+    .sub:hover{
+        color: darkcyan;
+        background-color: darkblue;
+    }
+    .form{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position:absolute;
+        top:85px;
+        left:400px;
+        background-color: cornflowerblue;
+        text-align: center;
+        padding: 10px;
+    }
+    h1{
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        margin-right: 200px;
+    }
+
+        </style>
+</head>
+<body>
+   
+    <div class="dove">
+        <h1>Go away</h1>
+    <form action="/delete" METHOD="POST" class="form">
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" required><br>
+        <label for="password">password</label><br>
+        <input type="password" name="password" id="password" required><br>
+        <br><br>
+        <button type="submit" class="sub">ENTER</button>
